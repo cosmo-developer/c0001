@@ -18,9 +18,9 @@ int main(int argc, char** argv) {
 		std::cout<<"App not found:"<<title<<std::endl;
 		exit(406);
 	}
-//	notepad->setCoord(5,2);
-//	notepad->setWidth(600);
-//	notepad->setHeight(600);
+	notepad->setCoord(5,2);
+	notepad->setWidth(600);
+	notepad->setHeight(600);
 	printf("WindowName:%s,X:%d,Y:%d,WIDTH:%d,HEIGHT:%d\n",
 	notepad->getTitle(),
 	notepad->getX(),

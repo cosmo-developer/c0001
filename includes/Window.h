@@ -1,7 +1,6 @@
 #ifndef WINDOW_H
 #define WINDOW_H
 #include "cc0001defs.h"
-#include "Menu.h"
 struct Denim{};
 class CC0001_API Window
 {
@@ -26,6 +25,9 @@ class CC0001_API Window
 		virtual int getCode(int denim)=0;
 		virtual void clickMenu(int denim)=0;
 		virtual int getMenuCount()=0;
+		virtual void sendKeyDown(int keyCode)=0;
+		virtual void sendKeyUp(int keyCode)=0;
+		virtual void closeWindow()=0;
 	protected:
 };
 
